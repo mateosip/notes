@@ -46,7 +46,6 @@ const list = function(){
 const read = function(arg){
     obj.notes.forEach(function(note,i){
         if(i === arg.index){
-            console.log("debug");
             console.log(note.body);
         }
     })
@@ -115,75 +114,3 @@ yargs.command({
     },
     handler: remove,
 })
-
-// yargs.parse();
-
-// npm i --save yargs
-
-// yargs.command({
-
-//   command: 'remove',
-
-//   describe: 'remove a note',
-
-//   handler: function() {
-
-//     console.log('Removing a note');
-
-//   },
-
-// });
-
-// // Create add command
-
-// yargs.command({
-
-//   command: 'list',
-
-//   describe: 'list existing notes',
-
-//   handler: function(argv) {
-
-//     console.log(chalk.blue(`Listing notes`));
-
-//   },
-
-// });
-
-// yargs.command({
-
-//   command: 'read',
-
-//   describe: 'read a note',
-
-//   handler: function() {
-
-//     console.log('Reading notes');
-
-//   },
-
-// });
-
-// yargs.parse();
-
-// const obj = {
-
-//   name: 'Alberto',
-
-//   friends: ['Luis', 'Jorge', 'Maria'],
-
-// };
-
-// const str = JSON.stringify(obj);
-
-// console.log(str);
-
-// const obj2 = JSON.parse(str);
-
-// console.log(obj2);
-
-// fs.writeFileSync('notes.txt', str);
-
-// const obj3 = JSON.parse(fs.readFileSync('notes.txt').toString());
-
-// console.log(obj3);
