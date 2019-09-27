@@ -46,7 +46,6 @@ const list = function(){
 const read = function(arg){
     obj.notes.forEach(function(note,i){
         if(i === arg.index){
-            console.log("debug");
             console.log(note.body);
         }
     })
